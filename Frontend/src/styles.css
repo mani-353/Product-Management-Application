@@ -1,0 +1,161 @@
+:root {
+    --bg: #f7fafc;
+    --card: #ffffff;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --danger: #ef4444;
+    --radius: 10px;
+    --gap: 12px;
+    --pad: 14px;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: #0f172a;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 28px auto;
+    padding: 18px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.search,
+.select {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #e6e9ee;
+    min-width: 180px;
+}
+
+.panel {
+    background: transparent;
+    margin-bottom: 18px;
+}
+
+.form {
+    background: var(--card);
+    padding: var(--pad);
+    border-radius: var(--radius);
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+    display: grid;
+    gap: 10px;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e6e9ee;
+    font-size: 0.95rem;
+}
+
+.form-row textarea {
+    min-height: 68px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #e6e9ee;
+}
+
+.btn.primary {
+    background: var(--accent);
+    color: white;
+}
+
+.btn.danger {
+    background: var(--danger);
+    color: white;
+}
+
+.field-error {
+    color: var(--danger);
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 160px;
+}
+
+.card-title {
+    margin: 0 0 6px 0;
+    font-size: 1.05rem;
+}
+
+.card-price {
+    margin: 0 0 8px 0;
+    font-weight: 600;
+    color: #111827;
+}
+
+.card-category {
+    margin: 0 0 8px 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.card-desc {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+.empty {
+    text-align: center;
+    color: var(--muted);
+    padding: 24px;
+}
